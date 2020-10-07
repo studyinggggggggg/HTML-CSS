@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    label.title {
+      font-weight: bold;
+      width: 800px;
+      float: left;
+    }
+
+    div.centered {
+      text-align: center;
+    }
+
+    fieldset {
+      margin: 15px 10px;
+    }
+
+    fieldset legend {
+      font-weight: bold;
+      font-size: 18px;
+      color: purple;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h3>상품주문서</h3>
+      <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+          <li><label class="title">이름 <input type="text" placeholder="여백없이 입력" required></label></li>
+          <li><label class="title">연락처 <input type="tel" placeholder="연락가능 번호"></label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+          <li><label class="title">주소 <input type="text" size="40" required></label></li>
+          <li><label class="title">전화번호 <input type="text" required></label></li>
+          <li><label class="title">메모 <textarea name="" id="" cols="40" rows="3"></textarea></label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+          <li><label><input type="checkbox">과테말라 안티구아 <small>(100g)</small><input type="number" value="0" min="0"
+                max="5"></label></li>
+          <li><label><input type="checkbox">인도네시아 만델링 <small>(100g)</small><input type="number" value="0" min="0"
+                max="5"></label></li>
+          <li><label><input type="checkbox">탐라는도다(블렌딩) <small>(100g)</small><input type="number" value="0" min="0"
+                max="5"></label></li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+  <div class="centered">
+    <input type="submit" value="주문하기">
+    <input type="reset" value="다시작성">
+  </div>
+</body>
+
+</html>
